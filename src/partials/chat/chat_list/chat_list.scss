@@ -1,0 +1,23 @@
+@import '/layout/scss/variables';
+
+.chat-list {
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid $dark-text-color;
+  display: flex;
+  justify-content: center;
+
+  form {
+    width: 90%;
+    z-index: 1;
+
+    #message {
+      width: 100%;
+      background: $main-light;
+      border-radius: 5px;
+      height: 2rem;
+      margin-top: 2rem;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<link rel='stylesheet' href='/partials/chat/chat_feed/chat_feed.scss'>
+<div class='chat-feed'>
+  <div class='chat-feed__header'>
+    {{> user_preview/user_preview user-name='Tyrion'}}
+    {{> button/button class='chat-settings-btn'}}
+  </div>
+  <div class='chat-feed__main'>
+    {{> stub/stub label='It will be chat feed here...'}}
+  </div>
+  <div class='chat-feed__footer'>
+    {{> button/button class='add-files-btn'}}
+    <form>
+      {{> input/input label-class='custom-input-label' name='message' type='text' placeholder='Message'}}
+      {{> button/button class='send-message-btn'}}
+    </form>
+  </div>
+</div>

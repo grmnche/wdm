@@ -1,0 +1,27 @@
+@import '/layout/scss/main';
+
+main {
+  @include flexbox-style(flex, center, center, column, 100%);
+
+  h1 {
+    color: #cecece;
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  h2 {
+    color: #cecece;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem 0 0;
+  }
+
+  nav {
+    margin-top: 5rem;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}

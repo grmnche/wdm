@@ -1,0 +1,11 @@
+@import '/layout/scss/main';
+
+.chat-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+input {
+  z-index: 1;
+}

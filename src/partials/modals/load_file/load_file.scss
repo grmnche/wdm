@@ -1,0 +1,36 @@
+@import '/layout/scss/main';
+@import '/layout/scss/variables';
+@import '/layout/scss/button/button.scss';
+@import '/layout/scss/button/button_dark.scss';
+
+.load-files-modal {
+  @include flexbox-style(flex, center, center, column, 260px);
+
+  width: 340px;
+  background: $main-light;
+  border-radius: 12px;
+  color: $main-color;
+
+  p:first-child {
+    font-size: 20px;
+    margin: 3rem 0;
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+
+  .custom-input-label {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+
+  button {
+    margin-bottom: 2.5rem;
+  }
+
+  form {
+    @include flexbox-style(flex, center, center, column, 260px);
+  }
+}

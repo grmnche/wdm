@@ -1,0 +1,33 @@
+{{#> initial_page/initial_page title='Profile' }}
+<main class='profile'>
+    <link rel='stylesheet' href='./profile.scss' />
+
+    {{> profile_back_bar/profile_back_bar}} {{> user_avatar/user_avatar
+    class='user-avatar' src='/images/avatar.png' user-name='John' }}
+
+    <div class='data-container'>
+        <form>
+            {{> profile_data_item/profile_data_item name='email' type='text'
+            item_name='Email' placeholder='winteriscoming@yandex.ru'}}
+            {{> profile_data_item/profile_data_item name='password' type='password'
+            item_name='Login' placeholder='johnsnow'}}
+            {{> profile_data_item/profile_data_item name='first_name' type='text'
+            item_name='Name' placeholder='John'}}
+            {{> profile_data_item/profile_data_item name='second_name' type='text'
+            item_name='Surname' placeholder='Snow'}}
+            {{> profile_data_item/profile_data_item name='display_name' type='text'
+            item_name='Chatname' placeholder='John'}}
+            {{> profile_data_item/profile_data_item name='phone' type='text'
+            item_name='Phone' placeholder='+7 (xxx) xxx xx xx'}}
+        </form>
+    </div>
+
+    <div class='profile-footer'>
+        <nav>
+            <a href='./modules/change_profile_data/change_profile_data.html'>Change info</a>
+            <a href='./modules/change_password/change_profile_password.html'>Change password</a>
+            <a href='../../index.html'>Logout</a>
+        </nav>
+    </div>
+</main>
+{{/ initial_page/initial_page}}

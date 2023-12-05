@@ -1,0 +1,10 @@
+.user-preview {
+  display: flex;
+  align-items: center;
+
+  .user-photo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+}

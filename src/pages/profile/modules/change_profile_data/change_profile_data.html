@@ -1,0 +1,23 @@
+{{#> initial_page/initial_page title='Change profile data' }}
+<main class='change-profile-data'>
+  <link rel='stylesheet' href='../../profile.scss' />
+
+  {{> profile_back_bar/profile_back_bar}}
+
+  {{> user_avatar/user_avatar class='user-avatar' src='/images/avatar.png'}}
+
+  <div class='data-container'>
+    <form>
+      {{> profile_data_item/profile_data_item name='email' type='text' item_name='Email'
+      placeholder='winteriscoming@yandex.ru'}}
+      {{> profile_data_item/profile_data_item name='password' type='password' item_name='Login' placeholder='johnsnow'}}
+      {{> profile_data_item/profile_data_item name='first_name' type='text' item_name='Name' placeholder='John'}}
+      {{> profile_data_item/profile_data_item name='second_name' type='text' item_name='Surname' placeholder='Snow'}}
+      {{> profile_data_item/profile_data_item name='display_name' type='text' item_name='Chatname' placeholder='John'}}
+      {{> profile_data_item/profile_data_item name='phone' type='text' item_name='Phone' placeholder='+7 (xxx) xxx xx
+      xx'}}
+    </form>
+  </div>
+  {{> button/button label='Save'}}
+</main>
+{{/ initial_page/initial_page}}

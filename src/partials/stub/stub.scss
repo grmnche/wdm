@@ -1,0 +1,13 @@
+@import '/layout/scss/variables';
+
+.stub-page {
+  @include flexbox-style(flex, center, center, column, 100%);
+
+  position: absolute;
+  width: 100%;
+
+  img {
+    width: 8rem;
+    z-index: 2;
+  }
+}

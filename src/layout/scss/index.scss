@@ -1,0 +1,14 @@
+@import './variables';
+
+ul {
+  @include flexbox-style(flex, center, center, row, 100vh);
+  list-style: none;
+}
+
+a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0;
+}

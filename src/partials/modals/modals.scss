@@ -1,0 +1,41 @@
+@import '/layout/scss/variables';
+
+.modal {
+  background: $main-light;
+  border-radius: 12px;
+
+  padding: 0.5rem;
+
+  .action-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .modal-btn {
+    margin-right: 1rem;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .add-photo-video-btn {
+    background-image: url('/images/add-photo-video.svg');
+  }
+
+  .add-file-btn {
+    background-image: url('/images/add-file.svg');
+  }
+
+  .add-location-btn {
+    background-image: url('/images/add-location.svg');
+  }
+
+  .add-user-btn {
+    background-image: url('/images/add-user.png');
+  }
+
+  .remove-user-btn {
+    background-image: url('/images/remove-user.png');
+  }
+}

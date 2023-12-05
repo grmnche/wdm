@@ -1,0 +1,19 @@
+@import './variables';
+@import './font';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-color;
+  color: $text-color;
+  font-family: 'Roboto-Regular', sans-serif;
+  height: 100vh;
+}
+
+input:not(.item-value) {
+  @include placeholder-style(#999999, 14px, 1rem);
+}

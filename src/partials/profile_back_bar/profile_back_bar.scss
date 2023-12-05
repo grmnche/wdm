@@ -1,0 +1,17 @@
+@import '/layout/scss/variables';
+
+.back-bar {
+  @include flexbox-style(flex, center, center, column, 100vh);
+  width: 4%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 1px solid $dark-text-color;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+}

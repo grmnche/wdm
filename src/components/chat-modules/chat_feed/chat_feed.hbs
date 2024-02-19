@@ -1,0 +1,48 @@
+<div class='chat-feed'>
+  {{#if selectedChat}}
+    <div class='modal-outer remove-user-modal'>
+      <div class='modal'>
+        {{{userToDelete}}}
+        {{{deleteUserBtn}}}
+      </div>
+    </div>
+
+    <div class='modal-outer add-user-modal'>
+      <div class='modal'>
+        {{{userID}}}
+        {{{addUserBtn}}}
+      </div>
+    </div>
+
+    <div class='chat-feed__header'>
+      {{{userPreview}}}
+
+      {{{chatSettingsBtn}}}
+
+      {{{userAction}}}
+    </div>
+
+    <div class='chat-feed__main'>
+      <div class='messages'>
+        {{#each messages}}
+          {{{this}}}
+        {{/each}}
+      </div>
+    </div>
+    <div class='chat-feed__footer'>
+
+      <form class='message-form' onsubmit='return false;'>
+        {{{addFilesBtn}}}
+
+        {{{messageField}}}
+        <span class='input-error'>{{inputError}}</span>
+
+        {{{sendMessageBtn}}}
+      </form>
+
+    </div>
+
+  {{else}}
+    Выберите чат
+  {{/if}}
+</div>

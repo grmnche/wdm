@@ -1,0 +1,25 @@
+.error-page {
+  @include flexbox(center, center, column, 100%, 0);
+
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: #cecece;
+  }
+
+  h2 {
+    margin: 1rem 0 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #cecece;
+  }
+
+  nav {
+    margin-top: 5rem;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+}

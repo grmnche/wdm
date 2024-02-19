@@ -1,0 +1,29 @@
+<main class='profile'>
+
+  {{{profileBackBar}}}
+
+  {{{userAvatar}}}
+  {{{loadFile}}}
+
+  <div class='data-container'>
+    <form>
+      {{#each fields}}
+        <div class='input-container {{className}}'>
+          {{{this}}}
+          <span class='input-error'>{{inputError}}</span>
+        </div>
+      {{/each}}
+    </form>
+
+    <div class='profile-footer'>
+      <nav>
+        {{{changeInfo}}}
+        {{{changePassword}}}
+
+        {{{logoutButton}}}
+
+      </nav>
+    </div>
+  </div>
+
+</main>

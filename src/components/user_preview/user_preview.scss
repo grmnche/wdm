@@ -1,0 +1,13 @@
+.user-preview {
+  display: flex;
+  align-items: center;
+
+  .user-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: 1rem;
+
+    background-image: url('/images/avatar.png');
+    background-size: cover;
+  }
+}

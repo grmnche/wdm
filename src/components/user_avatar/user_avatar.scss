@@ -1,0 +1,42 @@
+.user-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 1.2rem;
+}
+
+.avatar-container {
+  cursor: pointer;
+
+  position: absolute;
+  top: 10rem;
+
+  width: 130px;
+  height: 130px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+
+    color: $text-color;
+
+    &.hide {
+      display: none !important;
+    }
+
+    &.show {
+      display: block !important;
+    }
+  }
+}

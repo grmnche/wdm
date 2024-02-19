@@ -1,0 +1,56 @@
+@import './button/button';
+
+body {
+  @include flexbox(center, center, column, 100vh, 0);
+  max-height: 100%;
+  background-color: $main-color;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 340px;
+    height: 450px;
+    min-height: 450px;
+    max-height: 550px;
+
+    background-color: $main-light;
+    border-radius: 12px;
+
+    form {
+      @include flexbox(center, center, column, auto, 0);
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      margin: 3rem 0;
+      font-weight: 500;
+      color: $main-color;
+    }
+
+    label {
+      width: 80%;
+      font-size: 14px;
+      color: $light-text-color;
+    }
+
+    input {
+      width: 100%;
+      margin: 0 0 1rem;
+      border: none;
+      border-bottom: 1px solid $dark-text-color;
+    }
+  }
+}
+
+.nav {
+  margin-bottom: 1.5rem;
+
+  span {
+    cursor: pointer;
+    color: $main-color;
+  }
+}

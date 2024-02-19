@@ -1,0 +1,58 @@
+.chat-list {
+  @include flexbox(initial, center, column, 100%, 0);
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid $dark-text-color;
+
+  .actions {
+    @include flexbox(space-between, center, row, 5%, 0);
+    cursor: pointer;
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  form {
+    z-index: 1;
+    width: 90%;
+
+    .input-container {
+      width: 100%;
+      margin-inline: auto;
+
+      .input-error {
+        top: 68px;
+      }
+    }
+
+    #message {
+      @include placeholder-style($light-text-color, 1rem, 1rem);
+      width: 100%;
+      height: 2rem;
+      margin-top: 2rem;
+
+      background: $main-light;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  .create-chat-btn,
+  .to-profile-btn {
+    cursor: pointer;
+
+    font-size: 1rem;
+    color: $text-color;
+
+    background: transparent;
+    border: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+}

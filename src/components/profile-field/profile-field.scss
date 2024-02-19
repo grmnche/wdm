@@ -1,0 +1,24 @@
+.data-item-container {
+  margin: 0.3rem 0;
+
+  .input-error {
+    top: 42px;
+    right: 0;
+  }
+}
+
+.data-item-container,
+.profile-footer a {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  border-bottom: 1px solid $dark-text-color;
+
+  p {
+    margin: 0.6rem 0;
+  }
+}

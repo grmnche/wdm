@@ -1,0 +1,58 @@
+.modal-user-action {
+  @include flexbox(space-around, start, column, 100%, 0);
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+
+  display: none;
+
+  width: 260px;
+  height: 140px;
+  padding: 1rem;
+
+  background-color: $main-light;
+  border-radius: 12px;
+
+  .action-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .modal-btn {
+    z-index: 100;
+
+    margin-right: 1rem;
+
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+  }
+
+  .add-photo-video-btn {
+    background-image: url('/images/add-photo-video.svg');
+  }
+
+  .add-file-btn {
+    background-image: url('/images/add-file.svg');
+  }
+
+  .add-location-btn {
+    background-image: url('/images/add-location.svg');
+  }
+
+  .add-user-btn {
+    background-image: url('/images/add-user.png');
+  }
+
+  .remove-user-btn {
+    background-image: url('/images/remove-user.png');
+  }
+
+  &.show {
+    display: flex;
+  }
+
+  &.hide {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+<div class='chat-outer {{#if isSelected }}selected{{/if}}'>
+    <div class='chat'>
+      <div class='chat__user-avatar'></div>
+      <div class='chat__info info'>
+        <span class='info__name'>{{title}}</span>
+         {{#if unread_count }}
+        <span class='info__last-message'>{{unread_count}}</span>
+        {{/if}}
+        <span class='info__time'>{{chatTime}}</span>
+      </div>
+
+    {{{deleteChat}}}
+    </div>
+</div>

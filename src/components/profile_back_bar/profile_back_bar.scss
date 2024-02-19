@@ -1,0 +1,21 @@
+.back-bar {
+  @include flexbox(center, center, column, 100vh, 0);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 4%;
+
+  border-right: 1px solid $dark-text-color;
+
+  &__btn {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    background-color: transparent;
+    background-image: url('/images/back-btn.svg');
+    background-size: cover;
+    border: none;
+  }
+}

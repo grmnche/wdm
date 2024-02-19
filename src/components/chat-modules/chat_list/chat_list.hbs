@@ -1,0 +1,32 @@
+<div class='chat-list'>
+
+  <div class='modal-outer chat-list-modal-outer'>
+    <div class='modal'>
+      {{{chatName}}}
+      {{{createChatBtn}}}
+    </div>
+  </div>
+
+  <form>
+    <div class='input-container {{className}}'>
+      <label class='custom-input-label' for='{{name}}'>{{label}}</label>
+      {{{search}}}
+      <span class='input-error'>{{inputError}}</span>
+    </div>
+  </form>
+
+  <div class='actions'>
+    {{{createChat}}}
+    {{{profileLink}}}
+  </div>
+
+  <aside>
+    {{#if isLoaded}}
+      {{#each chats}}
+        {{{this}}}
+      {{/each}}
+    {{else}}
+      Loading...
+    {{/if}}
+  </aside>
+</div>

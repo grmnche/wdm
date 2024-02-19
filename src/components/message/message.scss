@@ -1,0 +1,41 @@
+.message {
+  position: relative;
+
+  width: fit-content;
+  max-width: 40%;
+  margin-inline: 2.4rem;
+  padding: 11px;
+
+  font-size: 1.2rem;
+
+  &__time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    margin: 11px;
+
+    font-size: 10px;
+  }
+}
+
+.companion-message {
+  color: $text-color;
+  background: $dark-color-2;
+  border-radius: 0 20px 20px;
+
+  .message__time {
+    color: $text-color;
+  }
+}
+
+.user-message {
+  margin: 0 2.4rem 0 auto;
+  color: $main-color;
+  background: $main-light;
+  border-radius: 20px 20px 0;
+
+  .message__time {
+    color: $main-color;
+  }
+}

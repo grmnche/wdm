@@ -38,3 +38,5 @@
 [Изменение пароля](src/pages/profile/modules/settings-password/settings-password.hbs)
 [Профиль](src/pages/profile/profile.hbs)
 [Чат](src/pages/messenger/messenger.hbs)
+
+# wdm

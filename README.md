@@ -1,9 +1,6 @@
 # **WebDragon Messenger (WDM)**  
 ### **Платформа для обмена сообщениями с поддержкой реального времени**  
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5b2f3b7a-9b1a-4b8a-8b0a-5b2f3b7a9b1a/deploy-status)](https://thriving-biscochitos-25136b.netlify.app/)  
-[![TypeScript](https://img.shields.io/badge/TypeScript-4.8+-3178C6.svg?logo=typescript)](https://www.typescriptlang.org/)  
-
 **Корпоративное решение** для обмена текстовыми сообщениями и файлами. Архитектура спроектирована для масштабируемости с соблюдением **SOLID-принципов** и возможностью перехода на **микросервисы**.  
 
 ---
